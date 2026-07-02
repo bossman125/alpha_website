@@ -1,0 +1,63 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        archival: {
+          50: '#faf9f7',
+          100: '#f0ede8',
+          200: '#ddd8ce',
+          300: '#c4bdae',
+          400: '#a89e8c',
+          500: '#8c826e',
+          600: '#6b6354',
+          700: '#4a443b',
+          800: '#332e28',
+          900: '#1e1b17',
+        },
+        navy: {
+          50: '#f0f3f6',
+          100: '#d9e0e8',
+          200: '#b3c1d1',
+          300: '#8da2ba',
+          400: '#6b83a3',
+          500: '#4a638c',
+          600: '#3a4f70',
+          700: '#2a3b54',
+          800: '#1c2738',
+          900: '#0f151f',
+        },
+        crimson: {
+          50: '#fdf2f2',
+          100: '#fce0e0',
+          200: '#f9c1c1',
+          300: '#f29b9b',
+          400: '#e87070',
+          500: '#d44d4d',
+          600: '#b33a3a',
+          700: '#8f2d2d',
+          800: '#6b2222',
+          900: '#451616',
+        },
+        sepia: {
+          50: '#fbf8f2',
+          100: '#f5ecd9',
+          200: '#ebd5b3',
+          300: '#deb887',
+          400: '#cc9a5e',
+          500: '#b07d3c',
+          600: '#8f632e',
+          700: '#6b4a22',
+          800: '#473116',
+          900: '#2b1d0d',
+        },
+      },
+      fontFamily: {
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+};
