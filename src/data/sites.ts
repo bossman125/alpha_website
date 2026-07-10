@@ -19,14 +19,32 @@ The most serious allegations involved the execution of recaptured escapees.`,
     trial: {
       summary:
         'The trial was held before a Military Court for the Trial of War Criminals in Hong Kong, with Lt. Col. R.C. Laming presiding as President. The prosecution was led by Major G.B. Puddicombe of the Victoria Rifles of Canada.',
-      charges: `Accused: Col. Tokunaga Isao (D1) — Charges 1–10; Capt. Saito Shunkichi (D2) — Charges 1–5; Lt. Tanaka Hitochi (D3) — Charges 1, 3, 6, and 11; Int. Tsutada Itsuo (D4) — Charge 1; Sgt. Harada Jotaro (D5) — Charge 1.
+      charges: `Accused:
+- Col. Tokunaga Isao (D1) — Charges 1–10
+- Capt. Saito Shunkichi (D2) — Charges 1–5
+- Lt. Tanaka Hitochi (D3) — Charges 1, 3, 6, and 11
+- Int. Tsutada Itsuo (D4) — Charge 1
+- Sgt. Harada Jotaro (D5) — Charge 1.
 
 The General Charges (1–5): Concerned the overall inhumane treatment of POWs.
 The Escape Charges (6–8): Addressed the maltreatment and subsequent execution of recaptured Canadian and British POWs.
 The Misappropriation Charge (9): Alleged that Tokunaga misappropriated Red Cross supplies for his own use.
-The Civilian Ill-Treatment Charges (10–11): Concerned the beating, torture, and unlawful killing of Chinese civilians.`,
-      verdict:
-        'Accused sentences: Col. Tokunaga Isao (D1) — Death by hanging → Life imprisonment; Capt. Saito Shunkichi (D2) — Death by hanging → 20 years imprisonment; Lt. Tanaka Hitochi (D3) — 3 years imprisonment; Int. Tsutada Itsuo (D4) — 2 years imprisonment; Sgt. Harada Jotaro (D5) — 1 year imprisonment.',
+The Civilian Ill-Treatment Charges (10–11): Concerned the beating, torture, and unlawful killing of Chinese civilians.
+`,
+      defence: `The defence, led by Japanese barristers Mr. Fujita Tetsuo and Mr. Hagezawa, advanced several arguments:
+
+- The accused admitted to minor offences but argued the prosecution had exaggerated the gravity of the acts.
+- For the executions, the accused pleaded that they were merely following orders from the Chief of Staff of the Governor-General's Office.
+- They argued they did their best in extremely difficult circumstances, with D1 claiming he did all in his power to ameliorate the prisoners' plight.
+- D2, the medical officer, argued he was only responsible for supervising the POWs' own medical officers, not directly for their health. D3 claimed he could not control the guards or interpreters directly.
+`,
+      verdict: `
+- Col. Tokunaga Isao (D1) — Death by hanging → Life imprisonment
+- Capt. Saito Shunkichi (D2) — Death by hanging → 20 years imprisonment
+- Lt. Tanaka Hitochi (D3) — 3 years imprisonment
+- Int. Tsutada Itsuo (D4) — 2 years imprisonment
+- Sgt. Harada Jotaro (D5) — 1 year imprisonment.
+`,
     },
     testimony: [],
     questions: [

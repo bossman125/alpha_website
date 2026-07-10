@@ -7,6 +7,7 @@ export interface Site {
   trial: {
     summary: string;
     charges: string;
+    defence: string;
     verdict: string;
   };
   testimony: string[];
