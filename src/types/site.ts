@@ -1,3 +1,9 @@
+export interface SiteImage {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface Site {
   id: string;
   name: string;
@@ -12,4 +18,5 @@ export interface Site {
   };
   testimony: string[];
   questions: string[];
+  images?: SiteImage[];
 }

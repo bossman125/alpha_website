@@ -12,9 +12,12 @@ function SectionHeading({ children }: { children: ReactNode }) {
 
 export function Home() {
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
-      {/* Hero */}
-      <section className="text-center mb-16" aria-labelledby="hero-title">
+    <div className="relative min-h-screen overflow-hidden">
+      <div className="absolute inset-0 bg-[url('/background_image.jpg')] bg-cover bg-center bg-no-repeat" />
+      <div className="absolute inset-0 bg-black/15" />
+      <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16">
+        {/* Hero */}
+        <section className="rounded-[2rem] border border-white/60 bg-white/95 p-8 sm:p-10 shadow-2xl mb-10 text-center" aria-labelledby="hero-title">
         <h1
           id="hero-title"
           className="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-archival-900 mb-4 leading-tight"
@@ -34,7 +37,7 @@ export function Home() {
       </section>
 
       {/* Research Goal */}
-      <section className="mb-14" aria-labelledby="research-goal">
+      <section className="mb-8 rounded-[2rem] border border-white/60 bg-white/95 p-6 sm:p-8 shadow-xl" aria-labelledby="research-goal">
         <SectionHeading>Research Goal</SectionHeading>
         <p className="text-archival-700 mb-4">
           This project aims to develop an interactive web-based map documenting the Hong Kong War Crimes Trials spanning from 1946 to 1948. Far less studied than the Nuremberg or Tokyo Tribunals, the Hong Kong trials remain poorly served by existing digital resources. Although the trial records are digitized, the primary online database relies on an obsolete interface with broken mapping functions that are incompatible with modern web browsers. Furthermore, the source documents are frequently obscured by poor scan quality and dense legal terminology.
@@ -45,7 +48,7 @@ export function Home() {
       </section>
 
       {/* Project Overview */}
-      <section className="mb-14" aria-labelledby="project-overview">
+      <section className="mb-8 rounded-[2rem] border border-white/60 bg-white/95 p-6 sm:p-8 shadow-xl" aria-labelledby="project-overview">
         <SectionHeading>Project Overview</SectionHeading>
         <p className="text-archival-700 mb-4">
           The interactive map at the heart of this website links key locations to detailed
@@ -65,7 +68,7 @@ export function Home() {
       </section>
 
       {/* Overview of the Hong Kong War Crimes Trials */}
-      <section className="mb-14" aria-labelledby="trials-overview">
+      <section className="mb-8 rounded-[2rem] border border-white/60 bg-white/95 p-6 sm:p-8 shadow-xl" aria-labelledby="trials-overview">
         <SectionHeading>Overview of the Hong Kong War Crimes Trials</SectionHeading>
         <p className="text-archival-700 mb-4">
           Between 1946 and 1948, British military courts in Hong Kong held 46 trials involving 123 defendants, including Japanese military personnel and Formosa/Taiwan defendants, for war crimes committed during the occupation of Hong Kong. The cases covered abuses against prisoners of war, civilian internees, and local civilians, including murder, mistreatment, and forced labour. Conducted under British military jurisdiction rather than an international tribunal charter, the Hong Kong trials are less famous than Nuremberg and Tokyo but remain important for the historical record and the development of war-crimes jurisprudence.
@@ -73,7 +76,7 @@ export function Home() {
       </section>
 
       {/* Overview of the Battle of Hong Kong */}
-      <section className="mb-14" aria-labelledby="battle-overview">
+      <section className="rounded-[2rem] border border-white/60 bg-white/95 p-6 sm:p-8 shadow-xl" aria-labelledby="battle-overview">
         <SectionHeading>Overview of the Battle of Hong Kong</SectionHeading>
         <p className="text-archival-700 mb-4">
           On 8 December 1941—just hours after the attack on Pearl Harbour—Japanese forces invaded Hong Kong. The colony's defenders, including British, Canadian, Indian, and local volunteer units, fought a desperate seventeen-day battle against overwhelming odds.
@@ -86,6 +89,7 @@ export function Home() {
         </p>
       </section>
 
+      </div>
     </div>
   );
 }
