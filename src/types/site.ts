@@ -16,7 +16,7 @@ export interface Site {
     defence: string;
     verdict: string;
   };
-  testimony: string[];
+  citations: string[];
   questions: string[];
   images?: SiteImage[];
 }

@@ -46,25 +46,30 @@ The Civilian Ill-Treatment Charges (10–11): Concerned the beating, torture, an
 - Sgt. Harada Jotaro (D5) — 1 year imprisonment.
 `,
     },
-    testimony: [],
     questions: [
       'Colonel Tokunaga was the overall commandant. To what extent should a senior commander be held responsible for the actions of subordinates and the conditions in camps under their authority?',
       'The accused argued that they were following orders from higher authority, particularly regarding the executions. Should "superior orders" be a valid defence in war crimes trials? Why or why not?',
       'Captain Saito, as the senior medical officer, was found guilty of criminal neglect. What are the unique ethical obligations of medical personnel during wartime?',
     ],
+    citations: [
+      'Linton, Suzannah, and HKU Libraries. "Case No. WO235/1012." Hong Kong\'s War Crimes Trials Collection, University of Hong Kong Libraries, https://hkwctc.lib.hku.hk/exhibits/show/hkwctc/documents/item/61. Accessed 19 July 2026.',
+      '*Sham Shui Po Camp, Hong Kong, 1937 (c)-1941 (c)*. c. 1937–1941. National Army Museum, London, Study Collection, NAM. 2000-03-173-2. *Online Collection*, https://collection.nam.ac.uk/detail.php?acc=2000-03-173-2. Accessed 19 July 2026.',
+      'Panter, Bryan. *Sham Shui Po Barracks 1948*. 1948. *Gwulo: Old Hong Kong*, 7 Dec. 2019, https://gwulo.com/media/34179. Accessed 19 July 2026.',
+      'Northampton Museums. *Shamshuipo Camp, Hong Kong 1927*. 1 July 1927. *Gwulo: Old Hong Kong*, submitted by David, 23 Sept. 2014, https://gwulo.com/media/34179. Originally from Flickr, http://flickr.com/photo.gne?id=3449085331. Accessed 19 July 2026.',
+    ],
     images: [
       {
-        src: '/shamshuipo/shamshuipo1.jpg',
+        src: 'shamshuipo/shamshuipo1.jpg',
         alt: 'Historic street scene in Sham Shui Po',
         caption: 'Sham Shui Po POW camp main thoroughfare',
       },
       {
-        src: '/shamshuipo/shamshuipo2.jpg',
+        src: 'shamshuipo/shamshuipo2.jpg',
         alt: 'Sham Shui Po architecture detail',
         caption: 'Camp architecture and living quarters',
       },
       {
-        src: '/shamshuipo/shamshuipo3.jpeg',
+        src: 'shamshuipo/shamshuipo3.jpeg',
         alt: 'Sham Shui Po street marketplace',
         caption: 'Street-level view of camp life',
       },
@@ -100,25 +105,30 @@ Charge: "COMMITTING A WAR CRIME, in that he at Hong Kong, between October 1942 a
 `,
       verdict: `Sato Chochi was sentenced to 8 years imprisonment.`,
     },
-    testimony: [],
     questions: [
       "The prosecution used the term \"concerned in\" to establish Sato's responsibility for the patients. How does this legal concept differ from direct command responsibility, and what are its implications for holding medical personnel accountable in war crimes trials?",
       "Sato argued that his multiple duties and lack of clear instruction from superiors made his job extremely difficult. To what extent should a superior's failure to provide clear guidance mitigate the responsibility of a subordinate who is aware of a duty of care?",
       "The Judge Advocate noted that the prosecution had misled the court during cross-examination, which could have prejudiced the accused. What is the significance of procedural fairness in war crimes trials, and how does it impact the legitimacy of the verdict?",
     ],
+    citations: [
+      'Linton, Suzannah, and HKU Libraries. "Case No. WO235/1027." Hong Kong\'s War Crimes Trials Collection, University of Hong Kong Libraries, https://hkwctc.lib.hku.hk/exhibits/show/hkwctc/documents/item/64. Accessed 19 July 2026.',
+      'Dobie, Charles. Johnson-Ontario-Harbours15. 1945. Gwulo: Old Hong Kong, submitted by Klaus, 13 July 2015, https://gwulo.com/media/[item number]. Originally from freepages.military.rootsweb.ancestry.com/~cdobie/johnson/johnson-ontario-harbours.htm. Accessed 19 July 2026.',
+      'Hong Kong Correctional Services Department. [Stanley Prison, 1937]. "Changing Times," Hong Kong Correctional Services Museum, 2023, https://www.csd.gov.hk/emuseum/en/history.html. Accessed 19 July 2026.',
+      'Government Records Service. Internees in the Stanley Internment Camp, 1945. Reference no. 06-02-048. Hong Kong and World War II, Government of the Hong Kong SAR, https://www.grs.gov.hk/ws/english/resource/hong_kong_and_WWII/internment_camp/Hong_Kong_and_WWII_10.html. Accessed 19 July 2026.',
+    ],
     images: [
       {
-        src: '/stanley/stanley1.jpg',
+        src: 'stanley/stanley1.jpg',
         alt: 'Stanley Hospital interior view',
         caption: 'Stanley Hospital, wartime medical ward',
       },
       {
-        src: '/stanley/stanley2.png',
+        src: 'stanley/stanley2.png',
         alt: 'Stanley Hospital exterior sign',
         caption: 'Stanley Hospital entrance',
       },
       {
-        src: '/stanley/stanley3.jpg',
+        src: 'stanley/stanley3.jpg',
         alt: 'Stanley Gaol area',
         caption: 'Stanley Gaol surroundings during the occupation',
       },
@@ -157,25 +167,30 @@ The Accused petitioned against the judgement, arguing that: (1) the verdict was 
 
 In his review of the case on 24 February 1947, the Judge Advocate (Brigadier FGT Davis, DJAG, South East Asia Land Forces) observed that "There were small discrepancies in the prosecution evidence in regard to the particular form of torture used on specific occasions, but there is no doubt that torture was used. The accused in his statement admits ill-treating persons during interrogation though he denies that it was so severe as alleged by the prosecution." Ultimately, he advised that "the finding of the court is supported by the evidence and I advise confirmation".`,
     },
-    testimony: [],
     questions: [
       "The defence argued that the victims' testimonies were inconsistent and unreliable. What challenges do war crimes courts face in relying on victim testimony, particularly when the victims have suffered trauma and the events occurred some time ago?",
       "Honda admitted to \"slapping, hitting with bamboo sticks and splashing of water\" but denied that this constituted \"water torture.\" How should a court determine the line between permissible interrogation methods and torture, especially in a wartime context?",
       "The defence attempted to justify the ill-treatment by framing it as \"natural indignation at the theft of common property.\" To what extent, if any, should provocation or the gravity of the alleged offence (such as rice theft in a time of scarcity) mitigate the severity of punishment for war crimes?",
     ],
+    citations: [
+      'Linton, Suzannah, and HKU Libraries. "Case No. WO235/1045." Hong Kong\'s War Crimes Trials Collection, University of Hong Kong Libraries, https://hkwctc.lib.hku.hk/exhibits/show/hkwctc/documents/item/73. Accessed 19 July 2026.',
+      '"Historic Sites of the Communist Party of China in the War of Resistance in Hong Kong." 80th Anniversary of the Victory of the Chinese People\'s War of Resistance Against Japanese Aggression and the World Anti-Fascist War, Government of the Hong Kong SAR, https://www.80avictory.gov.hk/en/site-content.html?id=42. Accessed 19 July 2026.',
+      'Farmer, Hugh. "Cheung Chau Island Industry." The Industrial History of Hong Kong Group, 17 Oct. 2018, https://industrialhistoryhk.org/cheung-chau-island-industry/. Accessed 19 July 2026.',
+      'Fung, Fanny. "Fact Check: Separating the Myths from Facts about Hong Kong WW2 Guerrillas." South China Morning Post, 22 Aug. 2015, https://www.scmp.com/news/hong-kong/education-community/article/1851673/fact-check-separating-myths-facts-about-hong-kong. Accessed 19 July 2026.',
+    ],
     images: [
       {
-        src: '/cheungchow/cheung1.jpg',
+        src: 'cheungchow/cheung1.jpg',
         alt: 'Cheung Chow Island coastal view',
         caption: 'Coastal landscape at Cheung Chow Island',
       },
       {
-        src: '/cheungchow/cheung2.jpg',
+        src: 'cheungchow/cheung2.jpg',
         alt: 'Cheung Chow Island terrain',
         caption: 'Island terrain and settlement',
       },
       {
-        src: '/cheungchow/cheung3.jpg',
+        src: 'cheungchow/cheung3.jpg',
         alt: 'Cheung Chow Island waterfront scene',
         caption: 'Waterfront scene on Cheung Chow Island',
       },
@@ -223,25 +238,30 @@ Yoshioka Eizo (D4) — Death by hanging (executed on 29 June 1948 at Stanley Pri
 Kawai Hisao (D5) — Acquitted (No case to answer)
 `,
     },
-    testimony: [],
     questions: [
       'The defence argued that the accused were merely carrying out "counter-measures" against guerilla activities and that the excesses amounted only to negligence rather than intentional criminality. How should a war crimes court distinguish between negligence and intentional war crimes in the context of interrogation and torture?',
       'Yoshioka (D4) received the death sentence for causing the deaths of three detainees through torture, while Omura (D1) received 20 years for command responsibility. To what extent should the degree of direct participation in violence, versus supervisory responsibility, determine the severity of punishment in war crimes trials?',
       'The defence raised concerns about hearsay evidence and the reliability of witnesses who were not eye-witnesses to the deaths. What procedural challenges arise in prosecuting war crimes years after the events, and how should courts balance the need for justice against the rights of the accused to a fair trial?',
     ],
+    citations: [
+      'Linton, Suzannah, and HKU Libraries. "Case No. WO235/1112." Hong Kong\'s War Crimes Trials Collection, University of Hong Kong Libraries, https://hkwctc.lib.hku.hk/exhibits/show/hkwctc/documents/item/83. Accessed 19 July 2026.',
+      '"Old Yau Ma Tei Police Station: From HK Film Set to Tourist Destination." Our China Story, The Academy of Chinese Studies, 3 Oct. 2025, https://www.ourchinastory.com/en/13740/Old-Yau-Ma-Tei-Police-Station:-From-HK-film-set-to-tourist-destination. Accessed 19 July 2026.',
+      '"Sham Shui Po – Tai Po Road ca.1960." City in Time, https://www.cityintime.hk/en/article/sham-shui-po-tai-po-road-ca-1960/. Accessed 19 July 2026.',
+      '"Yau Ma Tei Police Station (2)." Hong Kong Memory, accession no. 190, https://www.hkmemory.org/postcard/record.php?acc_no=190&lang=eng. Accessed 19 July 2026.',
+    ],
     images: [
       {
-        src: '/yaumati/yau1.jpg',
+        src: 'yaumati/yau1.jpg',
         alt: 'Yaumati Police Station Building exterior',
         caption: 'Yaumati Police Station Building exterior',
       },
       {
-        src: '/yaumati/yau2.jpg',
+        src: 'yaumati/yau2.jpg',
         alt: 'Yaumati Police Station Building street view',
         caption: 'Street-level view of the building',
       },
       {
-        src: '/yaumati/yau3.jpg',
+        src: 'yaumati/yau3.jpg',
         alt: 'Yaumati Police Station Building interior context',
         caption: 'Historic context around the station',
       },

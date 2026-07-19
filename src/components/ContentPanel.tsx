@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Site } from '../types/site';
-import { Quote, MessageCircleQuestion, Scale, FileText, ChevronDown } from 'lucide-react';
+import { MessageCircleQuestion, Scale, FileText, ChevronDown } from 'lucide-react';
 
 interface ContentPanelProps {
   site: Site | null;
@@ -59,7 +59,7 @@ function renderVerdictTable(text: string) {
     .map((line) => line.trim())
     .filter((line) => line.startsWith('- '))
     .map((line) => {
-      const trimmed = line.replace(/^-\s*/, '');
+      const trimmed = line.replace(/^\-\s*/, '');
       const [defendant, sentence] = trimmed.split(' — ').map((part) => part.trim());
       return { defendant, sentence };
     });
@@ -98,8 +98,8 @@ export function ContentPanel({ site }: ContentPanelProps) {
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({
     narrative: true,
     trial: false,
-    testimony: false,
     questions: false,
+    citations: false,
   });
 
   const toggleSection = (key: string) => {
@@ -204,40 +204,6 @@ export function ContentPanel({ site }: ContentPanelProps) {
           </div>
         </section>
 
-        <section aria-labelledby={`${site.id}-testimony`} className="rounded-[24px] border border-archival-200 bg-archival-50/80 p-3 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md sm:p-5">
-          <button
-            type="button"
-            onClick={() => toggleSection('testimony')}
-            aria-expanded={openSections.testimony}
-            className="flex w-full items-center justify-between gap-3 rounded-[20px] px-2 py-2 text-left transition focus:outline-none focus:ring-2 focus:ring-navy-400"
-          >
-            <span className="flex items-center gap-2 font-serif text-xl font-semibold text-archival-900">
-              <Quote className="h-5 w-5 text-navy-600" aria-hidden="true" />
-              Testimony
-            </span>
-            <ChevronDown
-              className={`h-5 w-5 shrink-0 text-archival-500 transition-transform ${openSections.testimony ? 'rotate-180' : ''}`}
-              aria-hidden="true"
-            />
-          </button>
-          <div className={`overflow-hidden transition-all duration-300 ${openSections.testimony ? 'mt-4 max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
-            <div className="space-y-4 rounded-[20px] border border-archival-200 bg-white/80 p-4 sm:p-5">
-              {site.testimony.length > 0 ? (
-                site.testimony.map((quote, idx) => (
-                  <blockquote
-                    key={idx}
-                    className="rounded-r-[20px] border-l-4 border-sepia-400 bg-sepia-50 py-4 pl-5 pr-4 italic text-archival-800"
-                  >
-                    {quote}
-                  </blockquote>
-                ))
-              ) : (
-                <p className="text-base leading-8 text-archival-700">No testimony excerpts are available for this location.</p>
-              )}
-            </div>
-          </div>
-        </section>
-
         <section aria-labelledby={`${site.id}-questions`} className="rounded-[24px] border border-archival-200 bg-archival-50/80 p-3 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md sm:p-5">
           <button
             type="button"
@@ -263,6 +229,47 @@ export function ContentPanel({ site }: ContentPanelProps) {
                   </li>
                 ))}
               </ol>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby={`${site.id}-citations`} className="rounded-[24px] border border-archival-200 bg-archival-50/80 p-3 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-md sm:p-5">
+          <button
+            type="button"
+            onClick={() => toggleSection('citations')}
+            aria-expanded={openSections.citations}
+            className="flex w-full items-center justify-between gap-3 rounded-[20px] px-2 py-2 text-left transition focus:outline-none focus:ring-2 focus:ring-navy-400"
+          >
+            <span className="flex items-center gap-2 font-serif text-xl font-semibold text-archival-900">
+              <FileText className="h-5 w-5 text-navy-600" aria-hidden="true" />
+              Citations
+            </span>
+            <ChevronDown
+              className={`h-5 w-5 shrink-0 text-archival-500 transition-transform ${openSections.citations ? 'rotate-180' : ''}`}
+              aria-hidden="true"
+            />
+          </button>
+          <div className={`overflow-hidden transition-all duration-300 ${openSections.citations ? 'mt-4 max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'}`}>
+            <div className="space-y-4 rounded-[20px] border border-archival-200 bg-white/80 p-4 sm:p-5">
+              {site.citations.map((citation, idx) => (
+                <p key={idx} className="text-base leading-8 text-archival-700">
+                  {citation.split(/(https?:\/\/[^"]+)/g).map((part, partIdx) =>
+                    part.startsWith('http') ? (
+                      <a
+                        key={partIdx}
+                        href={part}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-navy-700 underline hover:text-navy-900"
+                      >
+                        {part}
+                      </a>
+                    ) : (
+                      part
+                    )
+                  )}
+                </p>
+              ))}
             </div>
           </div>
         </section>

@@ -12,8 +12,11 @@ export function SiteDetail() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const [selectedAlt, setSelectedAlt] = useState<string>('');
 
+  const baseUrl = import.meta.env.BASE_URL ? import.meta.env.BASE_URL.replace(/\/$/, '') : '';
+  const buildImageUrl = (path: string) => `${baseUrl}/${path.replace(/^\//, '')}`;
+
   const openLightbox = (src: string, alt = '') => {
-    setSelectedImage(src);
+    setSelectedImage(buildImageUrl(src));
     setSelectedAlt(alt);
     setLightboxOpen(true);
   };
@@ -87,7 +90,7 @@ export function SiteDetail() {
             {heroImage ? (
               <div className="overflow-hidden rounded-[32px] border border-archival-200 bg-white/90 shadow-[0_24px_70px_rgba(15,23,42,0.08)]">
                 <img
-                  src={heroImage.src}
+                  src={buildImageUrl(heroImage.src)}
                   alt={heroImage.alt}
                   className="h-96 w-full object-cover cursor-pointer transition-transform hover:scale-105"
                   onClick={() => openLightbox(heroImage.src, heroImage.alt)}
@@ -110,7 +113,7 @@ export function SiteDetail() {
               {secondaryImages.map((image) => (
                 <div key={image.src} className="overflow-hidden rounded-[28px] border border-archival-200 bg-white/90 shadow-sm">
                   <img
-                    src={image.src}
+                    src={buildImageUrl(image.src)}
                     alt={image.alt}
                     className="h-96 w-full object-cover cursor-pointer transition-transform hover:scale-105"
                     onClick={() => openLightbox(image.src, image.alt)}

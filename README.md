@@ -57,7 +57,7 @@ src/
     charges: 'Charges...',
     verdict: 'Verdict...',
   },
-  testimony: ['Quote 1...', 'Quote 2...'],
+  citations: ['Citation title and source with URL...'],
   questions: ['Question 1...', 'Question 2...'],
 }
 ```

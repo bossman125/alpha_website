@@ -21,7 +21,7 @@ export function Footer() {
             </h3>
             <p className="text-sm leading-relaxed">
               {/* TODO: Replace with actual citation once the historical map image is finalized. */}
-              <em>Map image citation placeholder — to be updated with source and provenance.</em>
+              <em>"Hong Kong." Encyclopædia Britannica, Encyclopædia Britannica, Inc., www.britannica.com/place/Hong-Kong. Map. Accessed 19 July 2026.</em>
             </p>
           </div>
         </div>
